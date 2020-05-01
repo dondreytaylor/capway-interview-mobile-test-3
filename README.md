@@ -1,6 +1,6 @@
 # News Feed Project
 
-Refer to below design created created by Diana Tomka and recreate each screen within a single android application. Please be sure to implement your app in as close to the design as possible. Your ability to recreate screens in accordance with mockups will be weighted heavily.
+Refer to below design created created by Diana Tomka and recreate each screen within a single android application. Please be sure to implement your app in as close to the design as possible. Your ability to recreate screens in accordance with mockups will be weighted heavily. Use dummy placeholder icons as replacements for any assets within this mockup.
 
 ![NewsApp](news_app.png)
 
