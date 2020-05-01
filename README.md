@@ -1,6 +1,6 @@
 # News Feed Project
 
-Refer to below design created created by Diana Tomka and recreate each screen within a single android application. Please be sure to implement your app in as close to the design as possible. Your ability to recreate screens in accordance with mockups will be weighted heavily. 
+Refer to below design created created by Diana Tomka and recreate each screen within a single android application. Please be sure to implement your app in as close to the design as possible. Your ability to recreate screens in accordance with mockups will be weighted heavily.
 
 ![NewsApp](news_app.png)
 
@@ -10,7 +10,7 @@ The original design can be found on [dribbble](https://dribbble.com/shots/539790
 
 Develop a full feed containing interactive posts in accordance to the following requirements.
 
-- Fork this repo before making any changes
+- Fork this repo and create a new branch before making any changes
 - Frequently commit your changes to GIT, with proper messages on each commit.
 - Colors should be the same hex/rgb values that appear within the screenshots
 - Code should be well documented, with adequate comments explaining relevant sections.
