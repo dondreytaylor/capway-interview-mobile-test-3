@@ -22,7 +22,7 @@ Develop a full feed containing interactive posts in accordance to the following 
 - Upon tapping each post within the feed, you should bring up the second more detailed screen. The detailed screen should display the title, author, date, and image associated with the article tapped from the feed. Use the description associated with the article as the body text (if one is not present, use LOREM IPSUM).
 - You do not need to create the comment section that is present within the design, this includes the comment count and view count.
 - Once you are finished, create a pull request into this same repo.
-- Please create a preview video using a screen recording program of your choosing, of your application. Send your screen recording as a link or attachment when responding back to the email that assigned you this task.
+- Please create a preview video of your application using a screen recording program of your choosing. Send your screen recording as a link or attachment when responding back to the email that assigned you this task.
 
 ## BONUS
 - Create the horizontal sliding menu (without the filter icon). Make it so that tapping each category loads a different or reloads the same set of articles.
