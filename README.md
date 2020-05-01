@@ -19,8 +19,7 @@ Develop a full feed containing interactive posts in accordance to the following 
 - Using a news API or news RSS feed, make HTTP calls to fetch articles that will be displayed in your news feed.
 - Create each post contained within the feed.
 - Each post within the feed should contain the title, author, date, and image associated with the article. In the event that the date or author is not easily parsable, use dummy data as placeholders.
-- Upon tapping each post within the feed, you should bring up the second more detailed screen. The detailed screen should display the title, author, date, and image associated with the article tapped from the feed.
-- Use the description associated with the article as the body text
+- Upon tapping each post within the feed, you should bring up the second more detailed screen. The detailed screen should display the title, author, date, and image associated with the article tapped from the feed. Use the description associated with the article as the body text
 - You do not need to create the comment section that is present within the design, this includes the comment count and view count.
 - Once you are finished, create a pull request into this same repo.
 - Please create a preview video using a screen recording program of your choosing, of your application. Send your screen recording as a link or attachment when responding back to the email that assigned you this task.
