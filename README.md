@@ -23,9 +23,10 @@ Develop a full feed containing interactive posts in accordance to the following 
 - Use the description associated with the article as the body text
 - You do not need to create the comment section that is present within the design, this includes the comment count and view count.
 - Once you are finished, create a pull request into this same repo.
+- Please create a preview video using a screen recording program of your choosing, of your application. Send your screen recording as a link or attachment when responding back to the email that assigned you this task.
 
 ## BONUS
-- Create the horizontal sliding menu (withou the filter icon). Make it so that tapping each category loads a different or reloads the same set of articles.
+- Create the horizontal sliding menu (without the filter icon). Make it so that tapping each category loads a different or reloads the same set of articles.
 
 ## Submitting
-If you have any questions about the tech or design specifications or have submitted your application, please respond to the email address that sent you this task. 
+If you have any questions about the tech or design specifications or have submitted your application, please respond to the email address that sent you this task.
