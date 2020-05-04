@@ -6,7 +6,11 @@
 
     <color name="white">#ffffff</color>
     <color name="black">#1d1d1d</color>
+    <color name="menu_item">#b7bdc1</color>
+    <color name="blue_selector">#2b90e8</color>
+    <color name="author_red">#fd8882</color>
 
     <color name="app_background">#edf1f5</color>
+    <color name="news_content">#a5a5a5</color>
 
 </resources>

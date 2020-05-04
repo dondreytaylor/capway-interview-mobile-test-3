@@ -9,6 +9,8 @@
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
 <!--         to change the background color of the whole app-->
         <item name="android:windowBackground">@color/app_background</item>
+<!--        halvetica regular font for text-->
+        <item name="android:fontFamily">@font/helvetica_normal</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

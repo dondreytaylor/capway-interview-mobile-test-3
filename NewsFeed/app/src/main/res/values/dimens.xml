@@ -5,4 +5,14 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
 
     <dimen name="app_title_size">20sp</dimen>
+    <dimen name="menu_item_padding">10dp</dimen>
+    <dimen name="menu_item_margin">15dp</dimen>
+    <dimen name="menu_item_text_size">17sp</dimen>
+
+    <dimen name="card_radius">30</dimen>
+
+    <dimen name="news_title_margin">12dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_padding_top">15dp</dimen>
+    <dimen name="card_margin">15dp</dimen>
 </resources>
