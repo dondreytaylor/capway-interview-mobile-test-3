@@ -4,7 +4,9 @@
     <color name="colorPrimaryDark">#e3e1e1</color>
     <color name="colorAccent">#03DAC5</color>
 
-
     <color name="white">#ffffff</color>
+    <color name="black">#1d1d1d</color>
+
+    <color name="app_background">#edf1f5</color>
 
 </resources>
