@@ -12,12 +12,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.news.newsfeed.R;
+import com.news.newsfeed.ui.NewsDetail.NewsDetail;
 
 public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHolder> {
     private LayoutInflater mInflater;
+    private Context context;
 
     public NewsItemAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
+        this.context = context;
     }
 
     @NonNull
@@ -62,14 +65,13 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //openActivity(ImageListActivity.class,mData.get(getAdapterPosition()).getTitle());
+                    openActivity(NewsDetail.class);
                 }
             });
         }
-        public void openActivity(Class activtyToLaunch,String listType) {
-//            Intent intent = new Intent(context, activtyToLaunch);
-//            intent.putExtra(Constant.ListType,listType);
-//            context.startActivity(intent);
+        public void openActivity(Class activtyToLaunch) {
+            Intent intent = new Intent(context, activtyToLaunch);
+            context.startActivity(intent);
         }
 
 

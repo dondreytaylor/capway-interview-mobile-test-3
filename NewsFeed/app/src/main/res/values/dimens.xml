@@ -12,6 +12,7 @@
     <dimen name="card_radius">30</dimen>
 
     <dimen name="news_title_margin">12dp</dimen>
+    <dimen name="news_title_size">17sp</dimen>
     <dimen name="card_padding">20dp</dimen>
     <dimen name="card_padding_top">15dp</dimen>
     <dimen name="card_margin">15dp</dimen>
