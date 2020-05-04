@@ -9,7 +9,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.NewsDetail.NewsDetail"></activity>
+        <activity android:name=".ui.NewsDetail.NewsDetail"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            ></activity>
         <activity
             android:name=".ui.home.HomeActivity"
             android:label="@string/title_activity_home"

@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/card_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/card_padding"
+            android:paddingRight="@dimen/card_margin"
+            android:paddingBottom="@dimen/card_padding_top"
+            android:paddingTop="@dimen/card_padding_top"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:textSize="@dimen/news_title_size"
+                    android:textColor="@color/black"
+                    android:text="Google is redifining mobile with artificial intelligence"
+                    android:layout_marginBottom="@dimen/news_title_margin"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:layout_marginRight="7dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_one"
+                    android:textColor="@color/news_content"
+                    android:text="Despite the uniqueness of the current recession, it is instructive to study how gold has performed in prior recessions.Gold has done well, but cross-asset correlations don't allow for trading gold based on trends in other asset classes.Trade gold, but be care…"
+                    android:maxLines="4"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_two"
+                    android:textColor="@color/news_content"
+                    android:text="Despite the uniqueness of the current recession, it is instructive to study how gold has performed in prior recessions.Gold has done well, but cross-asset correlations don't allow for trading gold based on trends in other asset classes.Trade gold, but be care…"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/author"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/author_red"
+                    android:text="Kanwal Nayyer"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:textColor="@color/menu_item"
+                    android:text="@string/dummy_date"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/news_image"
+                    android:src="@drawable/ic_launcher_background"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
 </LinearLayout>
