@@ -1,8 +1,10 @@
 package com.news.newsfeed.ui.home;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -24,12 +26,18 @@ import java.util.Objects;
 public class HomeActivity extends BaseActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-
+    ImageView notification;
+    @SuppressLint("MissingSuperCall")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState, R.layout.home_activity,true);
+        registerViews();
     }
 
+    private void registerViews()
+    {
+        notification = findViewById(R.id.toolbar_icon);
+        notification.setImageResource(R.drawable.notification);
+    }
 
 }

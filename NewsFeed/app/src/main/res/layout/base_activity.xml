@@ -13,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:theme="@style/ToolbarTheme">
+            app:theme="@style/ToolbarTheme"
+            android:elevation="5dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -24,10 +25,10 @@
                 android:id="@+id/toolbar_title" />
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_gravity="end"
-                android:id="@+id/notification_icon"
+                android:id="@+id/toolbar_icon"
                 android:src="@drawable/notification"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"/>
         </androidx.appcompat.widget.Toolbar>

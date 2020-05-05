@@ -31,7 +31,7 @@
                     android:id="@+id/title"
                     android:textSize="@dimen/news_title_size"
                     android:textColor="@color/black"
-                    android:text="Google is redifining mobile with artificial intelligence"
+                    android:text="@string/dummy_title"
                     android:layout_marginBottom="@dimen/news_title_margin"
                     android:maxLines="3"
                     android:ellipsize="end"

@@ -6,7 +6,15 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="comments">Comments (23)</string>
+    <string name="add_comment">Add Comment</string>
 
     <string name="dummy_date">01 OCT 2018</string>
+    <string name="dummy_title">Google is redifining mobile with artificial intelligence</string>
+    <string name="dummy_content">Despite the uniqueness of the current recession, it is instructive to study how gold has performed in prior recessions.Gold has done well, but cross-asset correlations don\'t allow for trading gold based on trends in other asset classes.Trade gold, but be care</string>
+    <string name="dummy_desc">The Bitcoin (BTC) block subsidy halving is all anyone can talk about this week — but according to Google, it’s Europe that is most obsessed.\r\nData from Google Trends shows that when it comes to searching “bitcoin halving,” western and central Europe is leadin… [+2777 chars]</string>
+    <string name="dummy_comment_count">23</string>
+    <string name="dummy_view_count">57</string>
+    <string name="dummy_comment">This course is packed with dummy comment section</string>
 
 </resources>

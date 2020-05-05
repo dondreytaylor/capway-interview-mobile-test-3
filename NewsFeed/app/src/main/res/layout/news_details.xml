@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="@dimen/card_margin"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scrollbars="none">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="5dp"
+        android:elevation="3dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/card_padding"
-            android:paddingRight="@dimen/card_margin"
+            android:paddingRight="@dimen/card_padding"
             android:paddingBottom="@dimen/card_padding_top"
             android:paddingTop="@dimen/card_padding_top"
             android:orientation="vertical">
@@ -32,7 +34,7 @@
                     android:id="@+id/title"
                     android:textSize="@dimen/news_title_size"
                     android:textColor="@color/black"
-                    android:text="Google is redifining mobile with artificial intelligence"
+                    android:text="@string/dummy_title"
                     android:layout_marginBottom="@dimen/news_title_margin"
                     android:maxLines="3"
                     android:ellipsize="end"
@@ -42,51 +44,136 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/content_one"
+                    android:id="@+id/description"
                     android:textColor="@color/news_content"
-                    android:text="Despite the uniqueness of the current recession, it is instructive to study how gold has performed in prior recessions.Gold has done well, but cross-asset correlations don't allow for trading gold based on trends in other asset classes.Trade gold, but be care…"
-                    android:maxLines="4"/>
+                    android:text="@string/dummy_content"
+                    android:maxLines="4"
+                    android:textSize="@dimen/content_size"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/newsImage"
                     android:src="@drawable/ic_launcher_background"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="@dimen/news_title_margin"
+                    android:layout_marginBottom="@dimen/news_title_margin"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/content_two"
+                    android:id="@+id/content"
+                    android:textSize="@dimen/content_size"
                     android:textColor="@color/news_content"
-                    android:text="Despite the uniqueness of the current recession, it is instructive to study how gold has performed in prior recessions.Gold has done well, but cross-asset correlations don't allow for trading gold based on trends in other asset classes.Trade gold, but be care…"
+                    android:text="@string/dummy_desc"
                     />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/author"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/author_red"
-                    android:text="Kanwal Nayyer"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/date"
-                    android:textColor="@color/menu_item"
-                    android:text="@string/dummy_date"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/news_image"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="@dimen/news_title_margin">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/author"
+                            android:textColor="@color/author_red"
+                            android:text="Kanwal Nayyer"
+                            android:singleLine="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/date"
+                            android:textColor="@color/menu_item"
+                            android:text="@string/dummy_date"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/comment"
+                            android:layout_marginRight="5dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dummy_comment_count"
+                            android:layout_marginRight="10dp"
+                            />
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/view"
+                            android:layout_marginRight="5dp"
+                            android:tint="@color/author_red"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dummy_view_count"
+                            android:textColor="@color/author_red"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
-</ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/comment_section"
+        android:elevation="3dp"
+        app:cardBackgroundColor="@color/comment_background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/card_padding">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comments"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/news_title_size"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/content_size"
+                    android:padding="5dp"
+                    android:background="@color/blue_selector"
+                    android:text="@string/add_comment"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/news_content"
+                android:text="@string/dummy_comment"
+                android:layout_marginTop="@dimen/news_title_margin"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
+</ScrollView>
