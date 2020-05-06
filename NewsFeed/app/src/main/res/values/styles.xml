@@ -44,5 +44,9 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <!--    custom font family-->
+    <style name="poppinsBold" parent="@android:style/TextAppearance.Medium">
+        <item name="fontFamily">@font/title_font</item>
+    </style>
 
 </resources>

@@ -16,7 +16,7 @@
     <dimen name="card_margin">15dp</dimen>
 
     <!--  text sizes-->
-    <dimen name="app_title_size">20sp</dimen>
+    <dimen name="app_title_size">22sp</dimen>
     <dimen name="news_title_size">17sp</dimen>
     <dimen name="content_size">14sp</dimen>
 

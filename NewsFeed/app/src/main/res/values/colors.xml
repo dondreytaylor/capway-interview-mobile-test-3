@@ -12,6 +12,6 @@
 
     <color name="app_background">#edf1f5</color>
     <color name="comment_background">#f7faff</color>
-    <color name="news_content">#a5a5a5</color>
+    <color name="news_content">#706F6F</color>
 
 </resources>

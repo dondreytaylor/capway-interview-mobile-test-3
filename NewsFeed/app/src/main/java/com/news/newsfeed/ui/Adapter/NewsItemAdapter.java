@@ -55,7 +55,7 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
         }else {
             holder.title.setText(context.getString(R.string.dummy_title));
         }
-        if (newsArticle.get(position).getTitle()!=null)
+        if (newsArticle.get(position).getAuthor()!=null)
         {
             holder.author.setText(newsArticle.get(position).getAuthor());
         }else {

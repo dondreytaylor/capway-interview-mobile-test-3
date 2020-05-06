@@ -36,8 +36,6 @@
                     android:textColor="@color/black"
                     android:text="@string/dummy_title"
                     android:layout_marginBottom="@dimen/news_title_margin"
-                    android:maxLines="3"
-                    android:ellipsize="end"
                     android:textStyle="bold"
                     android:layout_marginRight="7dp"
                     />
@@ -49,7 +47,6 @@
                     android:lineSpacingMultiplier="1.1"
                     android:textColor="@color/news_content"
                     android:text="@string/dummy_content"
-                    android:maxLines="4"
                     android:textSize="@dimen/content_size"/>
                 <ImageView
                     android:layout_width="match_parent"
