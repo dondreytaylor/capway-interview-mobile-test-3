@@ -5,6 +5,7 @@ import java.util.Locale;
 public class Constants {
 
     public static final String[] categories = {"All", "Business","Gadget","Sports","Video","Technology","Entertainment"};
+    public static final String NEWS_DETAIL = "details";
 
 
     // method to get country of user

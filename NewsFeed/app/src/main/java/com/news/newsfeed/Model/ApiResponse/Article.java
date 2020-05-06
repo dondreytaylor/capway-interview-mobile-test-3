@@ -3,7 +3,9 @@ package com.news.newsfeed.Model.ApiResponse;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Article {
+import java.io.Serializable;
+
+public class Article implements Serializable {
 
     @SerializedName("source")
     @Expose
@@ -20,6 +22,10 @@ public class Article {
     @SerializedName("description")
     @Expose
     private String description;
+
+    @SerializedName("content")
+    @Expose
+    private String content;
 
     @SerializedName("url")
     @Expose
@@ -63,6 +69,14 @@ public class Article {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getUrl() {

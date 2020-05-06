@@ -19,6 +19,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.news.newsfeed.Model.ApiResponse.Article;
 import com.news.newsfeed.R;
+import com.news.newsfeed.Util.Constants;
 import com.news.newsfeed.ui.NewsDetail.NewsDetail;
 
 import java.util.List;
@@ -106,8 +107,10 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
                 }
             });
         }
+
         public void openActivity(Class activtyToLaunch) {
             Intent intent = new Intent(context, activtyToLaunch);
+            intent.putExtra(Constants.NEWS_DETAIL,newsArticle.get(getAdapterPosition()));
             context.startActivity(intent);
         }
 
