@@ -10,4 +10,7 @@ public class ApiConstants {
     // api params
     public static final String COUNTRY = "country";
     public static final String API_KEY = "apiKey";
+
+    // api response keywords
+    public static final String STATUS_OK = "ok";
 }

@@ -8,11 +8,12 @@ import retrofit2.http.Query;
 
 import static com.news.newsfeed.Model.NetworkHelper.ApiConstants.API_KEY;
 import static com.news.newsfeed.Model.NetworkHelper.ApiConstants.COUNTRY;
+import static com.news.newsfeed.Model.NetworkHelper.ApiConstants.HEADLINES;
 
 public interface ApiInterface {
 
     // Method to get list of news of some specific country.
-    @GET("top-headlines")
+    @GET(HEADLINES)
     Call<News> getNews(@Query(COUNTRY) String country , @Query(API_KEY) String apiKey);
 
 }

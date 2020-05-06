@@ -16,5 +16,6 @@
     <string name="dummy_comment_count">23</string>
     <string name="dummy_view_count">57</string>
     <string name="dummy_comment">This course is packed with dummy comment section</string>
+    <string name="something_wrong_internet">Something went wrong</string>
 
 </resources>
