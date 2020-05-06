@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 import com.news.newsfeed.Model.ApiResponse.Article;
 import com.news.newsfeed.R;
 import com.news.newsfeed.ui.NewsDetail.NewsDetail;
@@ -46,14 +48,27 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
 
     private void setNewsData(ViewHolder holder,int position)
     {
-        holder.title.setText(newsArticle.get(position).getTitle());
-        holder.author.setText(newsArticle.get(position).getAuthor());
+        if (newsArticle.get(position).getTitle()!=null)
+        {
+            holder.title.setText(newsArticle.get(position).getTitle());
+        }else {
+            holder.title.setText(context.getString(R.string.dummy_title));
+        }
+        if (newsArticle.get(position).getTitle()!=null)
+        {
+            holder.author.setText(newsArticle.get(position).getAuthor());
+        }else {
+            holder.author.setText(context.getString(R.string.dummy_author));
+        }
         loadImage(holder,position);
     }
 
     private void loadImage(ViewHolder holder,int position)
     {
+        RequestOptions options = new RequestOptions().placeholder(R.drawable.ic_launcher_background).error(R.drawable.ic_launcher_background)
+                .diskCacheStrategy(DiskCacheStrategy.ALL);
         Glide.with(context).load(newsArticle.get(position).getUrlToImage())
+                .apply(options)
                 .into(holder.newsImage);
     }
 
