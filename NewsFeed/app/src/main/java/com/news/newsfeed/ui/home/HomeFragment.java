@@ -19,15 +19,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.news.newsfeed.Model.ApiResponse.News;
+import com.news.newsfeed.Model.NetworkHelper.NewsListContract;
+import com.news.newsfeed.Presenter.NewsListPresenter;
 import com.news.newsfeed.R;
 import com.news.newsfeed.Util.Constants;
 import com.news.newsfeed.ui.Adapter.NewsItemAdapter;
 import com.news.newsfeed.ui.Adapter.SlidingMenuAdapter;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 
     private ViewPager menuPager;
     private TabLayout menuTabs;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -49,6 +53,7 @@ public class HomeFragment extends Fragment {
     {
         menuPager = view.findViewById(R.id.viewpager_headlines);
         menuTabs = view.findViewById(R.id.tablayout_headlines);
+
     }
 
     private void setUpTabLayout()
@@ -61,5 +66,4 @@ public class HomeFragment extends Fragment {
 
         }
     }
-
 }

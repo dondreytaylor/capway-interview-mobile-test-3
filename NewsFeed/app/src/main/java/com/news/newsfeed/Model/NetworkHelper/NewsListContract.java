@@ -22,6 +22,10 @@ public interface NewsListContract {
 
         void onResponseFailure(String throwable);
 
+        void showProgress();
+
+        void hideProgress();
+
     }
 
     interface Presenter {

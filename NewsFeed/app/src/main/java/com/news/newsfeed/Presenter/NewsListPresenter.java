@@ -21,16 +21,25 @@ public class NewsListPresenter implements NewsListContract.Presenter, NewsListCo
     public void onSuccess(News news) {
         // let the app know of success response
         newsListView.setDataToRecyclerView(news);
+        if (newsListView != null) {
+            newsListView.hideProgress();
+        }
     }
 
     @Override
     public void onFailure(String message) {
         newsListView.onResponseFailure(message);
+        if (newsListView != null) {
+            newsListView.hideProgress();
+        }
     }
 
 
     @Override
     public void requestnewsFromServer(String country, String apiKey) {
-
+        if (newsListView != null) {
+            newsListView.showProgress();
+        }
+        newsListModel.getNewsList(country,apiKey,this);
     }
 }

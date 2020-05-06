@@ -2,6 +2,7 @@ package com.news.newsfeed.ui.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,18 +10,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
+import com.news.newsfeed.Model.ApiResponse.Article;
 import com.news.newsfeed.R;
 import com.news.newsfeed.ui.NewsDetail.NewsDetail;
+
+import java.util.List;
 
 public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHolder> {
     private LayoutInflater mInflater;
     private Context context;
+    private List<Article> newsArticle;
 
-    public NewsItemAdapter(Context context) {
+    public NewsItemAdapter(Context context, List<Article> newsArticle) {
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
+        this.newsArticle = newsArticle;
     }
 
     @NonNull
@@ -32,12 +41,25 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        //setNewsData(holder,position);
+        setNewsData(holder,position);
+    }
+
+    private void setNewsData(ViewHolder holder,int position)
+    {
+        holder.title.setText(newsArticle.get(position).getTitle());
+        holder.author.setText(newsArticle.get(position).getAuthor());
+        loadImage(holder,position);
+    }
+
+    private void loadImage(ViewHolder holder,int position)
+    {
+        Glide.with(context).load(newsArticle.get(position).getUrlToImage())
+                .into(holder.newsImage);
     }
 
     @Override
     public int getItemCount() {
-        return 8;
+        return newsArticle.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
