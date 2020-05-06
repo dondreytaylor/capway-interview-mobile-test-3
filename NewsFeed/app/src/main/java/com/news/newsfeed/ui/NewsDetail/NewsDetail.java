@@ -24,7 +24,7 @@ import com.news.newsfeed.ui.BaseClass.BaseActivity;
 public class NewsDetail extends BaseActivity {
 
     ImageView newsImage, shareNews;
-    TextView title, description,content,author;
+    TextView title, description,content,author,date;
     Article newsArticle;
 
     @SuppressLint("MissingSuperCall")
@@ -42,6 +42,7 @@ public class NewsDetail extends BaseActivity {
         shareNews.setImageResource(R.drawable.share_icon);
         newsImage = findViewById(R.id.newsImage);
         title = findViewById(R.id.title);
+        date = findViewById(R.id.date);
         description = findViewById(R.id.description);
         content = findViewById(R.id.content);
         author = findViewById(R.id.author);
@@ -89,6 +90,12 @@ public class NewsDetail extends BaseActivity {
         }else {
             author.setText(getString(R.string.dummy_author));
         }
+        if (newsArticle.getPublishedAt()!=null)
+        {
+            date.setText(Constants.formatDateForDetails(newsArticle.getPublishedAt()));
+        }else {
+            date.setText(getString(R.string.dummy_date));
+        }
         if (newsArticle.getDescription()!=null)
         {
             description.setText(HtmlCompat.fromHtml(newsArticle.getDescription(), HtmlCompat.FROM_HTML_MODE_LEGACY));
@@ -101,6 +108,8 @@ public class NewsDetail extends BaseActivity {
         }else {
             content.setText(getString(R.string.dummy_content));
         }
+
+
 
         setupShareButton(newsArticle.getTitle()+"\n" + newsArticle.getDescription());
     }

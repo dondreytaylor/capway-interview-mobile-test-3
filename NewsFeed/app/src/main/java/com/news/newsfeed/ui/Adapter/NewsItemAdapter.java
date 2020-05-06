@@ -61,6 +61,12 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
         }else {
             holder.author.setText(context.getString(R.string.dummy_author));
         }
+        if (newsArticle.get(position).getPublishedAt()!=null)
+        {
+            holder.date.setText(Constants.formatDateForDetails(newsArticle.get(position).getPublishedAt()));
+        }else {
+            holder.author.setText(context.getString(R.string.dummy_author));
+        }
         loadImage(holder,position);
     }
 
