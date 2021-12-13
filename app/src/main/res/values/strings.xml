@@ -9,4 +9,12 @@
 
     <string name="menu_news_feed">News Feed</string>
     <string name="menu_article_details">Article Details</string>
+    <string name="notifications">Notifications</string>
+    <string name="menu">Menu</string>
+    <string name="back">Back</string>
+    <string name="out_of_scope">Action not part of this scope</string>
+    <string name="business">Business</string>
+    <string name="gadgets">Gadgets</string>
+    <string name="sport">Sport</string>
+    <string name="video">Video</string>
 </resources>

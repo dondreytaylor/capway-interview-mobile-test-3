@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_news_feed"
-        android:name="com.capwaydemo.ui.NewsFeed.NewsFeedFragment"
+        android:name="com.capwaydemo.ui.newsFeed.NewsFeedFragment"
         android:label="@string/menu_news_feed"
         tools:layout="@layout/fragment_news_feed">
 
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/nav_article_details"
-        android:name="com.capwaydemo.ui.FeedDetails.ArticleDetailsFragment"
+        android:name="com.capwaydemo.ui.articleDetails.ArticleDetailsFragment"
         android:label="@string/menu_article_details"
         tools:layout="@layout/fragment_article_details" />
 </navigation>
