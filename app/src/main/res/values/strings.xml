@@ -18,4 +18,6 @@
     <string name="sport">Sport</string>
     <string name="video">Video</string>
     <string name="article_title_picture">Article title picture</string>
+    <string name="not_part_of_scope">Action not part of this scope</string>
+    <string name="no_items_found">No items found...</string>
 </resources>

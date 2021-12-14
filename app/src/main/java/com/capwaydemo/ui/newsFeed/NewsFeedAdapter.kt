@@ -10,16 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.capwaydemo.R
 import com.capwaydemo.model.ArticlesEntity
-import android.graphics.drawable.Drawable
-
-import com.bumptech.glide.request.RequestOptions
-import com.bumptech.glide.request.target.Target
 
 
 class NewsFeedAdapter(var context: Context, var items: List<ArticlesEntity>, var onArticleClickListener: OnArticleClickListener) : RecyclerView.Adapter<NewsFeedAdapter.ViewHolder>() {
-
-//    private var mArticlesList: List<ArticlesEntity> = items
-//    private var mArticleClick: OnArticleClickListener = onArticleClickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.news_feed_item, parent, false)
@@ -29,15 +22,9 @@ class NewsFeedAdapter(var context: Context, var items: List<ArticlesEntity>, var
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
         holder.tvAuthor.text = item.author
-        holder.tvDate.text = item.date
+        holder.tvDate.text = item.publishedAt
         holder.tvTitle.text = item.title
-        Glide.with(context).load(item.mainIconImageUrl).into(holder.ivIcon)
-//
-//        Glide.with(context)
-//            .setDefaultRequestOptions(RequestOptions().placeholder(R.drawable.ic_menu_camera).error(R.drawable.ic_menu_gallery))
-//            .load(item.mainIconImageUrl)
-//            .into(holder.ivIcon)
-//            Glide.with(context).load(item.mainIconImageUrl).into(holder.ivIcon)
+        Glide.with(context).load(item.urlToImage).into(holder.ivIcon)
     }
 
     override fun getItemCount(): Int {

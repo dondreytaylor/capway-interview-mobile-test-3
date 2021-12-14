@@ -54,6 +54,7 @@
             android:padding="5dp">
 
             <TextView
+                android:id="@+id/tvAll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -66,6 +67,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/tvBusiness"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -77,6 +79,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/tvGadgets"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -88,6 +91,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/tvSports"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -99,6 +103,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/tvVideo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -111,11 +116,21 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_items_found"
+        android:textSize="16sp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hsv" />
 
