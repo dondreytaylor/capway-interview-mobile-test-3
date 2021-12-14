@@ -17,4 +17,5 @@
     <string name="gadgets">Gadgets</string>
     <string name="sport">Sport</string>
     <string name="video">Video</string>
+    <string name="article_title_picture">Article title picture</string>
 </resources>
